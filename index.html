@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spotify music player</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="music-player">
+            <div class="song-bar">
+                <div class="song-infos">
+                    <div class="image-container">
+                        <img src="" id="images" alt="" />
+                    </div>
+                    <div class="song-description">
+                        <p class="title" id="title">
+                            One Up
+                        </p>
+                        <p class="artist">Central Cee</p>
+                    </div>
+                </div>
+            </div>
+            <audio src="music/ukulele.mp3" id="audio"></audio>
+            <div class="progress-controller">
+                <div class="control-buttons" id="music-container">
+                    <i class="fas fa-random" id="random"></i>
+                    <i class="fas fa-step-backward" id="prev"></i>
+                    <i class="play-pause fas fa-play" id="play"></i>
+                    <i class="fas fa-step-forward" id="next"></i>
+                    <i class="fas fa-undo-alt" id="restart"></i>
+                </div>
+                <div class="music-container" id="music-container">
+                    <div class="music-info">
+                      <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="other-features">
+              <i class="fas fa-heart fa-3x" id="heart"></i>
+              <i class="fas fa-compress fa-3x"></i>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
